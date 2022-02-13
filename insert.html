@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERTION</title>
+    <link rel="stylesheet" href="insert2.css">
+</head>
+    <body>
+        <div>
+            <h1>DATA INSERTION</h1>
+        <form action="includes/insert.inc.php" method="post" enctype="multipart/form-data">
+            <div class="rome">
+            <label >CNE: </label>
+            <input type="text" name="cnenum" placeholder="CNE" required>
+            </div>
+            <br><br>
+            <div>
+            <label>FirstName:</label>
+            <input type="text" name="first" placeholder="Firstname" required>
+            </div>
+            <br><br>
+            <div>
+            <label>LastName:</label>
+            <input type="text" name="last" placeholder="Lastname" required>
+            </div>
+            <br><br>
+            <div>
+            <label>E-MAIL:</label>
+            <input type="email" name="mail" placeholder="E-mail" required>
+            </div>
+            <br><br>
+            <div>
+            <label for="file_photo">Photo:</label>
+            <input type="file" name="file" id="file_photo"><br><br>
+            </div>
+            <div>
+            <input type="submit" name="upload" value="Upload"><br><br>
+            </div>
+                </form>
+        </div>
+    </body>
+</html>
