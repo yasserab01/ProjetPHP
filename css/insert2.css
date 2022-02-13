@@ -1,0 +1,19 @@
+    div{  
+    margin: auto;
+    width: max-content;
+  }
+   .rome{
+     margin-top: 50px;
+     width: max-content;
+   }
+   form{
+    margin: 20px;
+    background-color: darkturquoise;
+    height: 374px;
+    PADDING: 31px;
+   }
+   h1{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     width: 269px;
+     margin: auto;
+   }

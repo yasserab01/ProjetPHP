@@ -1,0 +1,49 @@
+.title1{
+font-family: sans-serif;
+width: 574px;
+font-size: xx-large;
+}
+span{
+  font-family: fantasy;
+}
+
+h1{
+margin: auto;
+margin: auto;
+padding: 10px;
+font-size: larger;
+width: 348px;
+}
+table,tr,td {
+    border: 1px solid;
+    text-align: center;
+    width: max-content;
+  }
+  table {
+    width: 100%;
+  }
+  
+  td {
+    height: 100px;
+  }
+  nav {
+    border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '|';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
