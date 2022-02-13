@@ -5,15 +5,23 @@ if (isset($_POST['sub'])){
 
 $username=$_POST['uname'];
 $passwd=$_POST['psw'];
-$passwdr=$_POST['pswr'];
+$username = stripcslashes($username);
+$passwd = stripcslashes($passwd);
 
-$sql="SELECT uidUsers,pwdUsers FROM users WHERE uidUsers='$username' AND pwdUsers='$passwd' ";
+$sql="SELECT * FROM users WHERE uidUsers='$username' AND pwdUsers='$passwd' ";
+
+$username = mysqli_real_escape_string($conn,$username);
+$passwd = mysqli_real_escape_string($conn,$passwd);
 
 $result= mysqli_query($conn,$sql);
-if(isset($result)){
+$row = mysqli_fetch_assoc($result);
+if($row['uidUsers'] == $username && $row['pwdUsers'] == $passwd) {
     header('location:includes/bienvenue.inc.php');
 }
 else{
-    header('location:index.html');
+    header('location:index.html?error=incorrectpswordorusername');
 }
+}
+else{
+    header('location:index.html');
 }
